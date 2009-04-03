@@ -1,0 +1,10 @@
+Tattler
+=======
+
+A dinky little plugin that you may find helpful if you work with designers or when getting to grips with a new codebase.
+
+It's common task to split views up into nice reusable partials. However this can sometimes make it hard to pin down what file produced the html that you are looking at (especially if you are a non rails-savvy designer who is not familiar with rails' conventions). This plugin inserts an HTML comment every time a file is rendered with the path to the template.
+
+Inspired by http://groups.google.com/group/rubyonrails-talk/browse_thread/thread/9629e034c58c4d70/dba61934489544ff#dba61934489544ff
+
+Copyright (c) 2009 [Frederick Cheung], released under the MIT license
