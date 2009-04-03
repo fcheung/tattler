@@ -13,6 +13,8 @@ class TattlerTest < ActionController::TestCase
 <!-- TEMPLATE: views/dummy/index.html.erb -->
 <!-- TEMPLATE: views/dummy/_some_partial.erb -->
 Here is a partial
+<!-- ENDTEMPLATE: views/dummy/_some_partial.erb -->
+<!-- ENDTEMPLATE: views/dummy/index.html.erb -->
     _HTML
     assert_equal expected.strip, @response.body
   end
