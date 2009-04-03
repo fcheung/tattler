@@ -7,4 +7,6 @@ It's common task to split views up into nice reusable partials. However this can
 
 Inspired by http://groups.google.com/group/rubyonrails-talk/browse_thread/thread/9629e034c58c4d70/dba61934489544ff#dba61934489544ff
 
+Tested with rails 2.2.2 and 2.3.2
+
 Copyright (c) 2009 [Frederick Cheung], released under the MIT license
