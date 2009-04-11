@@ -3,6 +3,9 @@ require 'test_helper'
 class DummyController < ActionController::Base
   def index
   end
+  
+  def json
+  end
 end
 
 class TattlerTest < ActionController::TestCase
@@ -17,5 +20,10 @@ Here is a partial
 <!-- ENDTEMPLATE: views/dummy/index.html.erb -->
     _HTML
     assert_equal expected.strip, @response.body
+  end
+  
+  test "should not affect json documents" do
+    get :json, :format => 'json'
+    assert_equal '{"foo": bar}', @response.body
   end
 end
